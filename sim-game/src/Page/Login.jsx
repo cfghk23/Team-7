@@ -29,16 +29,17 @@ export default function Login() {
     event.preventDefault()
     console.log(JSON.stringify(formData))
     const response = await fetch('http://127.0.0.1:5000/login', {
-      method: 'POST',
+      mode: 'no-cors',
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData),
+      // body: JSON.stringify(formData),
     })
-    const data = await response.json()
+
+    const data = await response
     console.log(data)
     if (response.ok) {
-
       // navigate('/mainPage')
       // if (data.error && data.error === 'Username already exists.') {
       //   alert('Username already exists. Please choose another one.')
