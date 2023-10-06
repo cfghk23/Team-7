@@ -1,5 +1,11 @@
 import react from 'react'
 import './groceryGame.css'
+import cake from '../../assets/cake.png'
+import candies from '../../assets/candies.png'
+import chocolate from '../../assets/chocolate.png'
+import milk from '../../assets/milk.png'
+import rice from '../../assets/rice.png'
+import vegatables from '../../assets/vegetables.png'
 
 const GroceryGame = () => {
   return (
@@ -20,40 +26,45 @@ const GroceryGame = () => {
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <div class="bg-white bg-opacity-70 rounded shadow p-4">
-        <img src="product1.jpg" alt="Product 1" class="w-full h-40 object-cover mb-4"></img>
-        <h3 class="text-lg font-semibold">Product 1</h3>
-        <p class="text-gray-600">Description of Product 1</p>
+        <img src={cake} alt="Product 1" class="w-full h-40 object-cover mb-4"></img>
+        <h3 class="text-lg font-semibold">Cake</h3>
+        
         <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Select</button>
       </div>
 
       <div class="bg-white bg-opacity-70 rounded shadow p-4">
-        <h3 class="text-lg font-semibold">Product 1</h3>
-        <p class="text-gray-600">Description of Product 1</p>
+        <img src={candies} alt="Product 1" class="w-full h-40 object-cover mb-4"></img>
+        <h3 class="text-lg font-semibold">Candies</h3>
+        
         <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Select</button>
       </div>
 
       <div class="bg-white bg-opacity-70 rounded shadow p-4">
-        <h3 class="text-lg font-semibold">Product 1</h3>
-        <p class="text-gray-600">Description of Product 1</p>
+        <img src={chocolate} alt="Product 1" class="w-full h-40 object-cover mb-4"></img>
+        <h3 class="text-lg font-semibold">Chocolate</h3>
+        
         <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Select</button>
       </div>
 
       <div class="bg-white bg-opacity-70 rounded shadow p-4">
-        <h3 class="text-lg font-semibold">Product 1</h3>
-        <p class="text-gray-600">Description of Product 1</p>
-        <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Add to Cart</button>
+        <img src={milk} alt="Product 1" class="w-full h-40 object-cover mb-4"></img>
+        <h3 class="text-lg font-semibold">Milk</h3>
+        
+        <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Select</button>
       </div>
 
       <div class="bg-white bg-opacity-70 rounded shadow p-4">
-        <h3 class="text-lg font-semibold">Product 1</h3>
-        <p class="text-gray-600">Description of Product 1</p>
-        <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Add to Cart</button>
+        <img src={rice} alt="Product 1" class="w-full h-40 object-cover mb-4"></img>
+        <h3 class="text-lg font-semibold">Rice</h3>
+        
+        <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Select</button>
       </div>
 
       <div class="bg-white bg-opacity-70 rounded shadow p-4">
-        <h3 class="text-lg font-semibold">Product 1</h3>
-        <p class="text-gray-600">Description of Product 1</p>
-        <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Add to Cart</button>
+        <img src={vegatables} alt="Product 1" class="w-full h-40 object-cover mb-4"></img>
+        <h3 class="text-lg font-semibold">Vegetables</h3>
+        
+        <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Select</button>
       </div>
 
     </div>
