@@ -49,30 +49,6 @@ const SideBarForAdmin = () => {
             </ListItemIcon>
             <ListItemText primary='Create/Add Course' />
           </ListItem>
-          <ListItem>
-            <ListItemIcon>
-              <AssessmentIcon></AssessmentIcon>
-            </ListItemIcon>
-            <ListItemText primary='user login report' />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon>
-              <AssessmentIcon></AssessmentIcon>
-            </ListItemIcon>
-            <ListItemText primary='Users report' />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon>
-              <AssessmentIcon></AssessmentIcon>
-            </ListItemIcon>
-            <ListItemText primary='Activity progress report' />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon>
-              <AssessmentIcon></AssessmentIcon>
-            </ListItemIcon>
-            <ListItemText primary='Activity completion report' />
-          </ListItem>
         </List>
       </Drawer>
       <main>{/* Your main content goes here */}</main>
