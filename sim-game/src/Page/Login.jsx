@@ -28,18 +28,17 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault()
     console.log(JSON.stringify(formData))
-    const response = await fetch(
-      'http://127.0.0.1:8000/bias_test/api/signup/',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      }
-    )
+    const response = await fetch('http://127.0.0.1:5000/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
     const data = await response.json()
+    console.log(data)
     if (response.ok) {
+
       // navigate('/mainPage')
       // if (data.error && data.error === 'Username already exists.') {
       //   alert('Username already exists. Please choose another one.')
