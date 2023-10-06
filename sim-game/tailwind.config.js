@@ -9,6 +9,7 @@ module.exports = {
       },
       backgroundImage : {
         "market-background" : "url('./assets/supermarket.png')",
+        "town-background": "url('./assets/town_img.jpg')",
       }
     },
   },
