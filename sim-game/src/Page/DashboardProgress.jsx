@@ -44,23 +44,27 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 12, progress: ' 14/20' },
 ];
 
-export default function DashboardProgress() {
+const DashboardProgress = () => {
   return (
-    <Box sx={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: {
-              pageSize: 5,
-            },
-          },
-        }}
-        pageSizeOptions={[10]}
-        checkboxSelection
-        disableRowSelectionOnClick
-      />
-    </Box>
+    <Container maxWidth="sm">
+      <Typography variant="h4" align="center" gutterBottom>
+        Quiz Progress Dashboard
+      </Typography>
+
+      {students.map((student, index) => (
+        <Box key={index} mb={2}>
+          <Typography variant="subtitle1">{student.name}</Typography>
+          <LinearProgress variant="determinate" value={student.progress} />
+          <List dense>
+            <ListItem>
+              <ListItemText primary={`Quizzes Completed: ${student.quizzesCompleted}`} />
+            </ListItem>
+          </List>
+        </Box>
+      ))}
+    </Container>
   );
+};
+
+export default DashboardProgress;
 }
