@@ -22,9 +22,17 @@ class Student(db.Model):
     courses_avail = db.Column(db.String, nullable=True)
     courses_ongoing = db.Column(db.String, nullable=True)
     grade = db.Column(db.String, nullable=False)
+    password = db.Column(db.String, nullable=False)
 
 with app.app_context():
     db.create_all()
+
+class Teacher(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String, nullable=False)
+    email = db.Column(db.String, nullable=False)
+    school = db.Column(db.String, nullable=False)
+    grade = db.Column(db.String, nullable=False)
 
 # with app.app_context():
 #     student1 = Student(
