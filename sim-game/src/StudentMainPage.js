@@ -2,7 +2,6 @@ import homeIcon from './assets/home_icon.png';
 import './StudentMainPage.css';
 import bankIcon from './assets/bank_icon.png';
 import superMarketIcon from './assets/supermarket_icon.png';
-import StudentNavBar from './StudentNavBar';
 import { useState } from 'react';
 import townImg from './assets/town_img.jpg';
 
@@ -26,7 +25,6 @@ const StudentMainPage = () => {
 
     return (
         <div> 
-            <StudentNavBar />
             <div className='page-container'>
                 <img src={townImg} className='townImg'/>
                 <button className='MapButton' id='HomeBtn' onClick={ClickHomeIcon}> <img src={homeIcon} alt="Button Image" className='ButtonIcon'/> </button>
