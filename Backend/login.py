@@ -18,7 +18,9 @@ def login():
         user = Student.query.filter_by(name=username.data, password=password.data).first()
         if user:
             # Return an OK response with a success message
-            return jsonify({"message": "Login successful!"}), 200
+            response = jsonify({"message": "Login successful!"}), 200
+            response.headers['Access-Control-Allow-Origin'] = '*'
+            return response
         else:
             # Return a bad request response with an error message
             return jsonify({"message": "Invalid username or password!"}), 400

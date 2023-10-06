@@ -33,6 +33,7 @@ class Teacher(db.Model):
     email = db.Column(db.String, nullable=False)
     school = db.Column(db.String, nullable=False)
     grade = db.Column(db.String, nullable=False)
+    password = db.Column(db.String, nullable=False)
 
 # with app.app_context():
 #     student1 = Student(
