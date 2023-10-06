@@ -6,9 +6,9 @@ import Bank from './components/bank/Bank'
 function App() {
   return (
     <div className="App">
-     {/* <GroceryGame/>
-     <Bank/> */}
-      <StudentMainPage />
+     <GroceryGame/>
+     {/* <Bank/>  */}
+      {/* <StudentMainPage /> */}
      {/* <GroceryGame/>  */}
     </div>
   );

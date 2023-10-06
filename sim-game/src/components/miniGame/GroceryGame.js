@@ -6,21 +6,35 @@ import chocolate from '../../assets/chocolate.png'
 import milk from '../../assets/milk.png'
 import rice from '../../assets/rice.png'
 import vegatables from '../../assets/vegetables.png'
+import {useState} from 'react'
+import GameInstruction from './GameInstruction'
+import questionMark from '../../assets/questionMark_icon.png'
 
 const GroceryGame = () => {
+  const [popUp, setPopUp] = useState(true);
+
   return (
+    <>
     <div className='bg-market-background h-4/5'>
       <body class="bg-market-background">
+
+
+      {popUp && <GameInstruction setPopUp={setPopUp}/>}
   <header class="bg-primary py-4">
     <div class="container mx-auto px-4">
       <h1 class="text-2xl text-white">Welcome to the Market !!</h1>
+      <button data-modal-toggle="defaultModal" onClick={() => setPopUp(true)}class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id='toggleBtn' type="button">
+  ?
+</button>
+
+      {/* <button><img src={questionMark} alt="questionMark"></img></button> */}
       <p className='text-white'></p>
     </div>
   </header>
 
   <main class="container mx-auto px-4 py-8">
     <div class=" bg-secondary bg-opacity-70 text-2xl mb-4 rounded-lg">
-        <p className='ml-2'>Hello ! You have come to the supermarket to buy groceries for your family but keep in mind that the budget for this month is a bit tight so only buy what is required !!! (hint -  stay away from candies ;)</p>
+        <p className='ml-2'>Hello ! You have come to the supermarket to buy groceries for your family but keep in mind that the budget for this month is a bit tight so only buy what is required !!! (hint -  stay away from candies ;))</p>
     </div>
     
 
@@ -77,6 +91,7 @@ const GroceryGame = () => {
   </footer>
 </body>
     </div>
+    </>
   )
 }
 
