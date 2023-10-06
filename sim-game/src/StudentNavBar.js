@@ -1,6 +1,7 @@
-import {Link} from 'react-router-dom';
+
 
 const StudentNavBar = () => {
+
     return (
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -8,12 +9,13 @@ const StudentNavBar = () => {
       <img src="https://projectm2.net/pluginfile.php/1/theme_adaptable/logo/1689936774/Project%20M2.png" class="h-8 mr-3" alt="Flowbite Logo" />
       <ul class="py-2" aria-labelledby="user-menu-button">
         <li>
-            {/* <Link to = "/MainPage">
-              <a href="">Home</a>
-            </Link> */}
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Home</a>
         </li>
         <li>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Discussion Forum</a>
+        </li>
+        <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Leaderboard</a>
         </li>
         </ul>
   </a>

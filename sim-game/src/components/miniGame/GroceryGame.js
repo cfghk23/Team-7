@@ -6,14 +6,26 @@ import chocolate from '../../assets/chocolate.png'
 import milk from '../../assets/milk.png'
 import rice from '../../assets/rice.png'
 import vegatables from '../../assets/vegetables.png'
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { useNavigate } from 'react-router-dom';
 
 const GroceryGame = () => {
+    const navigate = useNavigate();
+
+    const ClickHomeIcon = () => {
+        console.log("clicked")
+        navigate("/")
+    }
+
   return (
     <div className='bg-market-background h-4/5'>
       <body class="bg-market-background">
   <header class="bg-primary py-4">
-    <div class="container mx-auto px-4">
-      <h1 class="text-2xl text-white">Welcome to the Market !!</h1>
+    <div class="container mx-auto px-4 flex">
+        <button onClick={ClickHomeIcon}>
+            <AiOutlineArrowLeft/>
+        </button>
+      <h1 class="text-2xl text-white ml-2 ">Welcome to the Market !!</h1>
       <p className='text-white'></p>
     </div>
   </header>

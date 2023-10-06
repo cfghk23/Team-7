@@ -1,12 +1,21 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
 
 const Bank = () => {
+    const navigate = useNavigate();
+    const ClickHomeIcon = () => {
+        console.log("clicked")
+        navigate("/")
+    }
   return (
     <div className=''>
       <body class="bg-bank-background min-h-screen">
   <header class="bg-primary py-4">
     <div class="container mx-auto px-4">
+    <button onClick={ClickHomeIcon}>
+            <AiOutlineArrowLeft/>
+    </button>
       <h1 class="text-2xl text-white">Welcome to the Bank !!</h1>
       <p className='text-white'></p>
     </div>

@@ -3,7 +3,7 @@ import StudentMainPage from './StudentMainPage';
 import StudentNavBar from './StudentNavBar';
 import GroceryGame from './components/miniGame/GroceryGame'
 import Bank from './components/bank/Bank'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider, BrowserRouter} from 'react-router-dom'
 
 
 
