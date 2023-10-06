@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet'
 function App() {
   return (
     <div className='App'>
-      <AdminBoard></AdminBoard>
+      {/* <AdminBoard></AdminBoard> */}
       <Helmet>
         <script src='https://cdn.botpress.cloud/webchat/v1/inject.js'></script>
         <script
@@ -21,7 +21,7 @@ function App() {
       </Helmet>
       {/* <Login></Login>   for login page*/}
       {/* <AdminBoard></AdminBoard>   for admin page*/}
-      {/* <Dashboard></Dashboard>   for teacher page*/}
+      <Dashboard></Dashboard> 
     </div>
   )
 }
