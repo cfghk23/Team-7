@@ -38,6 +38,9 @@
     position: absolute;
     bottom: 100px;
     left:  10px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    border: 2px solid black;
 }
 
 #SuperMarketBtn {
