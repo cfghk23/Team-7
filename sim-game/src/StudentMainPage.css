@@ -1,0 +1,50 @@
+.ButtonIcon {
+    width: 100px;
+    height: 100px;
+}
+
+.MapButton {
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    transition: opacity 0.3s ease;
+}
+
+.townImg {
+    width: 2000px;
+    height: 500px;
+}
+
+.page-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#HomeBtn {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+
+#BankBtn {
+    position: absolute;
+    top: 210px;
+    left: 450px;
+}
+
+#LeaderBoardBtn {
+    position: absolute;
+    bottom: 100px;
+    left:  10px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+
+#SuperMarketBtn {
+    position: absolute;
+    right: 410px;
+    top: 230px;
+} 
